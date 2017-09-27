@@ -1,0 +1,52 @@
+int led1 = 1;
+int led3 = 3;
+int led5 = 5;
+int led7 = 7;
+int led9 = 9;
+int led10 = 10;
+int led11 = 11;
+int led12 = 12;
+int led13 = 13;
+
+void setup() {
+  pinMode(led1, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led5, OUTPUT);
+  pinMode(led7, OUTPUT);
+  pinMode(led9, OUTPUT);
+  pinMode(led10, OUTPUT);
+  pinMode(led11, OUTPUT);
+  pinMode(led12, OUTPUT);
+  pinMode(led13, OUTPUT);
+}
+
+void loop() {
+  LightOnOff (50, 50, 1);
+  LightOnOff (50, 50, 3);
+  LightOnOff (50, 50, 5);
+  LightOnOff (50, 50, 7);
+  LightOnOff (50, 50, 9);
+  LightOnOff (50, 50, 10);
+  LightOnOff (50, 50, 11);
+  LightOnOff (50, 50, 12);
+  LightOnOff (50, 50, 13);
+  LightOnOff (50, 50, 12);
+  LightOnOff (50, 50, 11);
+  LightOnOff (50, 50, 10);
+  LightOnOff (50, 50, 9);
+  LightOnOff (50, 50, 7);
+  LightOnOff (50, 50, 5);
+  LightOnOff (50, 50, 3);
+}
+
+void LightOnOff(int onTime, int offTime, int poort){
+  digitalWrite(poort, HIGH);
+  delay(onTime);
+
+  digitalWrite(poort, LOW);
+  delay(offTime);
+
+  
+}
+
+//skrrra pa pa pap .... Ka ka
